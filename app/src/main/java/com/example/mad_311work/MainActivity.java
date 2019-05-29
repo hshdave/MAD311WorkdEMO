@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                toast.show();
 
-                //Toast.makeText(getApplicationContext(),"Registration Done!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Registration Done!",Toast.LENGTH_SHORT).show();
             }
         });
 
