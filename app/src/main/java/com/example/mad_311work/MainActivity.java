@@ -6,22 +6,25 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
 
     EditText edt_name,edt_email,edt_pass;
-    Button btn_sub;
+    Button btn_sub,btn_change;
+
+    ImageView imgv;
 
     static String TAG = "My Info";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.imagelayout);
 
-        edt_name = findViewById(R.id.edt_name);
+    /*    edt_name = findViewById(R.id.edt_name);
         edt_email = findViewById(R.id.edt_email);
         edt_pass = findViewById(R.id.edt_pass);
 
@@ -49,6 +52,20 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Registration Done!",Toast.LENGTH_SHORT).show();
             }
         });
+
+*/
+    btn_change = findViewById(R.id.btn_change);
+    imgv = findViewById(R.id.imageView);
+
+
+    btn_change.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            imgv.setImageResource(R.drawable.mylogo);
+        }
+    });
+
 
     }
 }
