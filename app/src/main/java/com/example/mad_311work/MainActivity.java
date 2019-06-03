@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 */
+
+    //Test Code 
     btn_change = findViewById(R.id.btn_change);
     imgv = findViewById(R.id.imageView);
 
